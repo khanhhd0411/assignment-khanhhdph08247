@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { ProductComponent } from './product/product.component';
@@ -14,7 +13,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule,AppRoutingModule,HttpClientModule ],
+  imports:      [ BrowserModule, FormsModule,HttpClientModule ],
   declarations: [ AppComponent, HelloComponent, ProductComponent, ProductListComponent, ServiceComponent, HomeComponent, ProductDetailComponent, ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
