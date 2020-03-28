@@ -1,23 +1,21 @@
-
-  <div class="col-md-3" *ngFor="let product of products">
-										<div class="grid_1_of_3 images_1_of_3">
-											<div class="grid_1">
-												<a href="single.html"><img src="{{product.img}}"> </a>
-													<div class="grid_desc">
-														<h3 class="title">{{product.name}}</h3>
-														<p class="title1">{{product.desc}}</p>
-														<div class="price" style="height: 19px;">
-															<span class="reducedfrom">{{product.price}}</span>
-														</div>
-														<div class="cart-button">
-															<div class="cart">
-																<button class="button"><span>Buy</span></button>
-															</div>
-															<button class="button"><span>Details</span></button>
-															<div class="clear"></div>
-														</div>
-													</div>
-											</div>
-			  </div>
-  </div>
-	
+<div class="row">
+	<div ngClass="col-lg-4 col-md-6 mb-4" *ngFor="let product of products">
+		<div class="card h-100">
+			<a href="single.html"><img src="{{product.img}}"> </a>
+				<div class="card-body">
+					<h4 class="card-title">
+						<a routerLink="/product/{{product.id}}" style="color: orange">{{product.name}}</a>
+						<h5 class="title1">{{product.desc}}</h5>
+					</h4>
+					<h5>${{product.price}}</h5>
+					<div class="cart-button">
+						<div class="cart">
+							<button class="button" ><span style="width:58.78px,height=27px ">Buy</span></button>
+						</div>
+						<button class="button"><span>Details</span></button>
+						<div class="clear"></div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>

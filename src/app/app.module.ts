@@ -10,11 +10,12 @@ import { ServiceComponent } from './service/service.component';
 import { ProductService } from './service/product.service';
 import { HomeComponent } from './home/home.component';
 import {HttpClientModule} from '@angular/common/http';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRoutingModule,HttpClientModule ],
-  declarations: [ AppComponent, HelloComponent, ProductComponent, ProductListComponent, ServiceComponent, HomeComponent, ],
+  declarations: [ AppComponent, HelloComponent, ProductComponent, ProductListComponent, ServiceComponent, HomeComponent, ProductDetailComponent, ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })
