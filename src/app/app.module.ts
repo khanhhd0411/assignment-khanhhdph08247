@@ -11,12 +11,14 @@ import { ServiceComponent } from './service/service.component';
 import { ProductService } from './service/product.service';
 import {HttpClientModule} from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { ProductManagerComponent } from './product-manager/product-manager.component';
 
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,HttpClientModule,AppRoutingModule ],
-  declarations: [ AppComponent, HelloComponent, ProductComponent, ProductListComponent, ServiceComponent, HomeComponent],
+  declarations: [ AppComponent, HelloComponent, ProductComponent, ProductListComponent, ServiceComponent, HomeComponent, ProductDetailComponent, ProductManagerComponent],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })
