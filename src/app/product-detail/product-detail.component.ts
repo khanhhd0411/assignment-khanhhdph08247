@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ProductService} from '../service/product.service';
 import { ActivatedRoute } from '@angular/router';
-import { Product } from './Product';
+import { Product } from '../Product';
 @Component({
   selector: 'app-product-detail',
   templateUrl: './product-detail.component.html',
@@ -19,7 +19,6 @@ product : Product;
   }
   getProduct(){
     this.activatedRoute.params.subscribe(param => {
-      console.log(param);
       this.productService.getProduct(param.id).subscribe(data =>{
         this.product=data;
       })
