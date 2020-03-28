@@ -7,14 +7,13 @@ import { ProductComponent } from './product/product.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ServiceComponent } from './service/service.component';
 import { ProductService } from './service/product.service';
-import { HomeComponent } from './home/home.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,HttpClientModule ],
-  declarations: [ AppComponent, HelloComponent, ProductComponent, ProductListComponent, ServiceComponent, HomeComponent, ProductDetailComponent, ],
+  declarations: [ AppComponent, HelloComponent, ProductComponent, ProductListComponent, ServiceComponent, ProductDetailComponent, ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })
